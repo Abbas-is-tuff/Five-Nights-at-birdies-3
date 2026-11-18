@@ -1,5 +1,7 @@
 # 5 Nights At Birdies 3
 
+<img src="logo-1024.png" alt="Withered Lemon" width="320">
+
 **Play:** https://abbas-is-tuff.github.io/Five-Nights-at-birdies-3/
 
 Thirty years after Birdies closed, its props have been turned into a horror attraction, Birdies' Fright. One real animatronic was found sealed in a back room: **Withered Lemon**. You work the night shift. Survive until 6 AM.
