@@ -7,9 +7,12 @@
 <meta name="apple-mobile-web-app-title" content="FNAB 3">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" type="image/png" href="icon-512.png">
-<link rel="apple-touch-icon" href="apple-touch-icon.png"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=VT323&display=swap">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<script>
+// Offline play: a service worker saves every game file on the device the first time the game opens
+if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+</script><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<link rel="stylesheet" href="fonts/fonts.css">
 <style>
 /* Layout: one full-bleed 3D view (office or a camera feed) with FNAF-style bars along the bottom, the camera map docked bottom-right, and full-screen cards for title, night intro, 6 AM and game over. Single dark look on purpose: it is a night shift. */
 :root{
@@ -331,7 +334,7 @@ button:focus-visible{outline:2px solid var(--cam);outline-offset:2px}
     <div class="row"><button class="go" id="bRetry" type="button">TRY AGAIN</button><button class="go" id="bTitle2" type="button">TITLE</button></div>
   </section>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="three.min.js"></script>
 <script>
 /* Withered Lemon, Five Nights At Birdies 3
    A realistic rainbow lorikeet (Lemon's real colours) inside a rotting animatronic suit:

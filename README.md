@@ -20,4 +20,9 @@ Keys: Space cameras, M maintenance, A audio, S seal, arrows to look, 1–0 camer
 ## Install on iPad or iPhone
 Open the play link in Safari, tap Share, then **Add to Home Screen**. It opens full screen like an app.
 
+## Play offline
+Open the game once while online. After that it works with no internet, from Safari or the Home Screen icon. Everything it needs (the 3D engine, fonts and sounds) is in this repo, and `sw.js` saves it on your device.
+
+When you change a game file, bump `VERSION` in `sw.js` (for example `fnab3-v2`) so devices pick up the new version next time they're online.
+
 Nights 1–5, plus Night 6 once you beat Night 5. Progress saves in your browser.
